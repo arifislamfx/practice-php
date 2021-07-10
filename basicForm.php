@@ -12,7 +12,7 @@
 
 
 <!-- form start -->
-<div class="form-container">
+<div style="display:flex; align-items:center; justify-content:center; padding: 10px; border: 1px solid #ddd; height: 400px; width: 400px; margin: 0 auto; " class="form-container">
     <form action="bio.php" method="POST">
         <label for="Name" >Name</label>
         <br />

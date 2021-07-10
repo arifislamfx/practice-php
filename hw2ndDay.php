@@ -19,45 +19,49 @@
 
     <h1 style="text-align:center;">GPA calculator if else statement</h1>    
 
-    <form style="background-color: #ddd; width: 300px; height: 200px; border: 1px solid red; text-align: center; color: #333; font-size:25px; margin: 0 auto;" action="hw2ndDay.php" method="get">
+    <form style="background-color: #ddd; width: 300px; height: 200px; border: 1px solid red; text-align: center; color: #333; font-size:25px; margin: 0 auto;" action="" method="POST">
      
     <input style="margin: 10px; padding: 10px 20px; font: size 18px; " placeholder="input your marks number" type = 'number' name ='number'>
-    <input style="margin: 10px; padding: 10px 20px; cursor: pointer; " type="submit" >
+    <input style="margin: 10px; padding: 10px 20px; cursor: pointer; " type="submit" name="submit" value ='Submit'>
 
     
     <br />
 
    <?php
    
-   $marks = $_GET['number'];
+   $marks = $_POST['number'];
 
-if($marks >= 80 && $marks <= 100) {
-    echo 'You have got A+';
-} elseif ($marks >= 70 && $marks <= 79) {
-    echo 'You have got  A';
-} elseif ($marks >= 60 && $marks <= 69) {
-    echo 'You have got A-';
-} elseif ($marks >=50 && $marks <= 59) {
-    echo 'You have got B';
-} elseif ($marks >= 40 && $marks <= 49) {
-    echo 'You have got C';
-} elseif ($marks >= 33 && $marks <= 39) {
-    echo 'You have got D';
-} elseif ($marks >= 0 && $marks <= 32) {
-    echo 'You have got F';
-} else {
-    echo 'invalid number';
-}
+    if($marks >= 80 && $marks <= 100) {
+        echo 'You have got A+';
+    } elseif ($marks >= 70 && $marks <= 79) {
+        echo 'You have got  A';
+    } elseif ($marks >= 60 && $marks <= 69) {
+        echo 'You have got A-';
+    } elseif ($marks >=50 && $marks <= 59) {
+        echo 'You have got B';
+    } elseif ($marks >= 40 && $marks <= 49) {
+        echo 'You have got C';
+    } elseif ($marks >= 33 && $marks <= 39) {
+        echo 'You have got D';
+    } elseif ($marks >= 0 && $marks <= 32) {
+        echo 'You have got F';
+    } else {
+        echo 'invalid number';
+    }
+        
+    echo '<br />';
     
-echo '<br />';
+       ?>
 
-   ?>
+
+
+
    </form>
 
    <!-- // ------------------------- GPA calculator switch statement -----------------------------------// -->
 
    <h1 style="text-align:center;">GPA calculator switch statement</h1>
-   <form style="background-color: #ddd; width: 300px; height: 200px; border: 1px solid red; text-align: center; color: #333; font-size:25px; margin: 0 auto;" action="hw2ndDay.php" method="get">
+   <form style="background-color: #ddd; width: 300px; height: 200px; border: 1px solid red; text-align: center; color: #333; font-size:25px; margin: 0 auto;" action="" method="POST">
      
     <input style="margin: 10px; padding: 10px 20px; font: size 18px; " placeholder="input your marks number" type = 'number' name ="number">
     <input style="margin: 10px; padding: 10px 20px; cursor: pointer; " type="submit" >
@@ -65,7 +69,7 @@ echo '<br />';
 
     <?php
 
-    $marks = $_GET['number'];
+    $marks = $_POST['number'];
 
     switch($marks) {
         case($marks >= 80 && $marks <= 100):
