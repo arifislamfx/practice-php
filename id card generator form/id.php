@@ -7,9 +7,15 @@
     $email = $_POST['user_email'];
     $course = $_POST['user_course'];
     $batch = $_POST['user_batch'];
+
+    $img = $_FILES['upload_img'] ['name'];
+    $tmp_name = $_FILES['upload_img'] ['tmp_name'];
+    move_uploaded_file($tmp_name, "upload/".$img);
+
   }
 
 ?>
+
 
 
 <!DOCTYPE html>
@@ -32,7 +38,7 @@
     <h1>WebDevs SID</h1>
   </header>
   <article>
-    <img alt='My Pic' id='thumb' src='https://kfcbd.com/wp-content/uploads/2016/08/dummy-prod-1.jpg'>
+    <img alt='My Pic' id='thumb' src='upload/<?php if(isset($img)) { echo $img;} ?>'>
     <h2> 
       <?php
        if(isset($_POST['user_name'])) {

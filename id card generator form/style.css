@@ -1,7 +1,7 @@
 html,
 body {
   background-color: #f4f4f4;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   height: 100vh;
   margin: 0;
   color: #333;
@@ -83,7 +83,8 @@ main .form-buttons button {
   fill: currentColor;
 }
 
-.a-btn, .a-btn--filled {
+.a-btn,
+.a-btn--filled {
   padding: 0.35em 1em;
   box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.5);
   cursor: pointer;
@@ -94,7 +95,8 @@ main .form-buttons button {
   border-radius: 3px;
   color: #3498db;
 }
-.a-btn:enabled:hover, .a-btn--filled:enabled:hover {
+.a-btn:enabled:hover,
+.a-btn--filled:enabled:hover {
   background-color: #3498db;
   color: #fff;
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
@@ -108,7 +110,8 @@ main .form-buttons button {
   background-color: #2980b9;
   border-color: #2980b9;
 }
-.a-btn:disabled, .a-btn--filled:disabled {
+.a-btn:disabled,
+.a-btn--filled:disabled {
   background-color: #ecf0f1;
   border-color: #bdc3c7;
   color: #6a6a6a;
@@ -117,7 +120,7 @@ main .form-buttons button {
 /* add a red asterisk after required labels 
  without having to include it in the markup */
 .label--required:after {
-  content: "*";
+  content: '*';
   color: red;
   margin-left: 5px;
 }

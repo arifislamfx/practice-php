@@ -11,7 +11,7 @@
 
 <body>
   <main>
-    <form action="id.php" method="post" >
+    <form action="id.php" method="post" enctype="multipart/form-data" >
       <h1>Create Your Virtual ID Card</h1>
 
       <!-- NAME FIELD -->
@@ -52,6 +52,14 @@
         <section>
           <input type="text" name="user_batch" placeholder="Your Batch No" />
         </section>
+      </div>
+
+      <br>
+
+      
+      <!-- Upload Image Fifld -->
+      <div class="upload_img">
+      Upload Photo:  <input type="file" name="upload_img">
       </div>
 
 
